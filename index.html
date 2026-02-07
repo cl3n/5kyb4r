@@ -14,12 +14,18 @@
       text-align: center;
     }
 
-    h1 {
-      margin-top: 80px;
-      margin-bottom: 40px;
-      font-size: 22px;
-      font-weight: normal;
-      letter-spacing: 1px;
+    /* HEADER / ANNOTATION SPACE */
+    .header {
+      padding: 48px 0 24px; /* fills the top annotation area */
+    }
+
+    /* TITLE */
+    .title {
+      margin: 0;
+      font-size: clamp(56px, 12vw, 120px); /* BIG + responsive */
+      font-weight: 900;
+      letter-spacing: 3px;
+      line-height: 1;
     }
 
     /* BUTTON */
@@ -51,7 +57,9 @@
 
 <body>
 
-  <h1>5KYB4R</h1>
+  <div class="header">
+    <h1 class="title">5KYB4R</h1>
+  </div>
 
   <a class="btn" href="a1.html">🐵</a>
   <a class="btn" href="a2.html">🙈</a>
@@ -60,5 +68,3 @@
 
 </body>
 </html>
-
-
